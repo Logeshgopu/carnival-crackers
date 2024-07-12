@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CARNIVAL CRACKERS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <style>
+      .header{
+        margin: 2px;
+        margin-bottom: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <img src="logo/carnival crackers log0.png" width="150" height="60" alt="Carnival Crackers Logo">
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricelist.html">Price List</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="cart" onclick="toggleCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="count">0</p>
+        </div>
+      </div>
+    
+    <div class="container">
+        <div class="content">
+          <div class="contactus-intro">
+            <h2 >CONTACT US</h2><br>
+            <h3 >We are happy to help you.</h3><br>
+          </div>
+            <div class="location">
+                <h3>LOCATION</h3>
+                <P>Address: 13/141, 4/723-H,Sundarrajapuram,<br>Anuppankulam,Sivakasi,Virudhunagar,<br>Tamil Nadu-626 123.</P><br>
+            </div>
+              <div class="contactus">
+                <h3>CALL US</h3>
+                <P>+91 9626364512<br>+91 8508291769 </P><br>
+              </div>
+              <div class="email">
+                <h3>OUR EMAIL</h3>
+                <P>sales@carnivalcrackerssivakasi.in</P><br>
+              </div><br>
+                <div class="form-head">
+                    <h2>Leave Your Details For More Updates</h2><br>
+
+                    <div class="form-design">
+                       
+                        <form action="/action_page.php">
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="name">Name</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="number">Phone Number</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="text" id="number" name="lastname" placeholder="Enter Your Number">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="email">Email</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="" name="email" placeholder="Enter Your Email">
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="message">Message</label>
+                            </div>
+                            <div class="col-75">
+                              <textarea id="address" name="subject" placeholder="Enter Your Address..." style="height:100px"></textarea>
+                            </div>
+                          </div><br>
+                          <div class="row">
+                            <input type="submit" value="SEND MESSAGE">
+                          </div>
+                        </form>
+                      </div>
+            </div><br>
+            <h3>FIND US</h3><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d11573.346183144886!2d77.84014235442883!3d9.419669691732718!3m2!1i1024!2i768!4f13.1!2m1!1s13%2F141%2C%204%2F723-H%2C%20SUNDARRAJAPURAM%2C%20ANUPPANKULAM%20VILLAGE%2C%20SIVAKASI%2C%20VIRUDHUNAGAR%2C%20TAMIL%20NADU%20%E2%80%93%20626%20123!5e0!3m2!1sen!2sin!4v1720465181592!5m2!1sen!2sin" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+        
+    </div>
+    
+    <!-- Include Footer -->
+    <footer>
+      <h3>CONTACT</h3><br>
+        <P>Address: 13/141, 4/723-H,Sundarrajapuram,<br>Anuppankulam,Sivakasi,Virudhunagar,<br>Tamil Nadu-626 123.</P><br>
+        <h3>CALL US</h3>
+        <P>+91 9626364512<br>+91 8508291769 </P><br>
+        <h3>OUR EMAIL</h3>
+        <P>sales@carnivalcrackerssivakasi.in</P><br>        
+        <p style="text-align: center;">&copy; 2024 Carnival Crackers. All rights reserved.</p>
+    </footer>
+
+    <script src="addtocart.js"></script>
+    <script>
+        // Function to include HTML files dynamically
+        function includeHTML() {
+            var elements, i, xhttp;
+            elements = document.querySelectorAll('[include-html]');
+            elements.forEach(function(element) {
+                var file = element.getAttribute('include-html');
+                fetch(file)
+                    .then(function(response) {
+                        return response.text();
+                    })
+                    .then(function(html) {
+                        element.innerHTML = html;
+                    });
+            });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            includeHTML();
+        });
+    </script>
+</body>
+</html>

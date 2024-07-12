@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CARNIVAL CRACKERS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <style>
+        .header{
+          margin: 2px;
+          margin-bottom: 10px;
+        }
+      </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo/carnival crackers log0.png" width="150" height="60" alt="Carnival Crackers Logo">
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Carnival crackers price list 2023.pdf">Price List</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="cart" onclick="toggleCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="count">0</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <h2 style="text-align: center;">ABOUT US</h2>
+            <p>Welcome to Carnival Crackers! We are dedicated to providing you with the best selection of fireworks for all your celebrations. Whether it's for Diwali, New Year's Eve, or any special occasion, we strive to offer high-quality products at competitive prices.</p>
+            <p>At Carnival Crackers, safety and customer satisfaction are our top priorities. All our products meet strict safety standards to ensure your celebrations are enjoyable and worry-free.</p>
+            <p>Explore our wide range of fireworks, from sparklers to aerial shells, and make your next event truly memorable with Carnival Crackers!</p>
+            <p>Thank you for choosing Carnival Crackers for all your fireworks needs. Feel free to contact us if you have any questions or special requests. Happy shopping!</p>
+        </div>
+    </div>
+    
+    <!-- Include Footer -->
+    <footer>
+        <h3>CONTACT</h3><br>
+        <P>Address: 13/141, 4/723-H,Sundarrajapuram,<br>Anuppankulam,Sivakasi,Virudhunagar,<br>Tamil Nadu-626 123.</P><br>
+        <h3>CALL US</h3>
+        <P>+91 9626364512<br>+91 8508291769 </P><br>
+        <h3>OUR EMAIL</h3>
+        <P>sales@carnivalcrackerssivakasi.in</P><br>
+        <p style="text-align: center;">&copy; 2024 Carnival Crackers. All rights reserved.</p>
+    </footer>
+
+    <script src="addtocart.js"></script>
+    <script>
+        // Function to include HTML files dynamically
+        function includeHTML() {
+            var elements, i, xhttp;
+            elements = document.querySelectorAll('[include-html]');
+            elements.forEach(function(element) {
+                var file = element.getAttribute('include-html');
+                fetch(file)
+                    .then(function(response) {
+                        return response.text();
+                    })
+                    .then(function(html) {
+                        element.innerHTML = html;
+                    });
+            });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            includeHTML();
+        });
+    </script>
+</body>
+</html>

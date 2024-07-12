@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Crackers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--<h1>CARNIVAL CRACKERS</h1>
+    <div class="moving-line">
+        <marquee>WELCOME TO CARNIVAL CRACKERS!!!&nbsp;&nbsp;&nbsp;BEST CRACKERS SELLER!!!&nbsp;&nbsp;&nbsp; HAPPY DIWALI!!! &nbsp;&nbsp;&nbsp; DISCOUNTS ARE AVAILABLE!!!  &nbsp;&nbsp;&nbsp;<i class="fa fa-phone"></i> CONTACT:&nbsp;+91&nbsp;96263 64512</marquee>
+    </div>-->
+
+    <br>
+    <div class="header">
+        <div class="logo">
+            <img src="logo/carnival crackers log0.png" width="150" height="60" alt="Carnival Crackers Logo">
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="pricelist.html">Price List</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="cart" onclick="toggleCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="count">0</p>
+        </div>
+    </div>
+    <div class="img">
+    <div class="banner-intro">
+        <h6>Trending Crackers</h6>
+             <h4>LATEST ALL<br>MODEL</h4><h5>CRACKERS</h5><h4>FOR SALE</h4>
+             <div class="banner-intro-btn">
+             <button><h6 style="text-decoration: none;"><a href="#">SHOP NOW</a></h6></button> 
+            </div>
+    </div>
+    </div><br>
+    <section class="features">
+        <div class="feature">
+            <div class="grid-item">
+            <div class="gif">
+            <img src="./image/high-quality.gif" alt="High Quality"  >
+        </div>
+            <h2>High Quality</h2>
+            <p>Our products are made with highest quality materials to ensure safety & enjoyment.</p>
+        </div>
+        </div>
+       
+        <div class="feature">
+            <div class="grid-item">
+            <div class="gif">
+            <img src="./image/best-price.gif" alt="Affordable Prices">
+        </div>
+            <h2>Affordable Prices</h2>
+            <p>We offer competitive pricing on all our firecrackers and fireworks.</p>
+        </div>
+        </div>
+        <div class="feature">
+            <div class="grid-item">
+            <div class="gif">
+            <img src="./image/delivery-truck.gif" alt="Fast Delivery">
+        </div>
+            <h2>Fast Delivery</h2>
+            <p>Get your fireworks delivered quickly and reliably to your doorstep.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+    <div class="product-intro">
+        <h3>"EXPERIENCE THE THRILL WITH OUR HIGH-QUALITY FIREWORKS, NOW AVAILABLE ONLINE AT CARNIVAL CRACKERS!"</h3>
+    </div>
+    <div class="container">
+        <div id="root">
+            <!-- Initial Products -->
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/kuruvi.jpg' alt='2 ¾” Kuruvi'>
+                </div>
+                <div class='bottom'>
+                    <p>2 ¾” Kuruvi</p>
+                    <h2>Rs: 40.00</h2>
+                    <button onclick='addtocart(0)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Lakshmi.jpg' alt='3 ½” Lakshmi'>
+                </div>
+                <div class='bottom'>
+                    <p>3 ½” Lakshmi</p>
+                    <h2>Rs: 60.00</h2>
+                    <button onclick='addtocart(1)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmi.jpg' alt='4” Laxmi'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi</p>
+                    <h2>Rs: 98.00</h2>
+                    <button onclick='addtocart(2)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmigold.jpg' alt='4” Laxmi (Gold)'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi (Gold)</p>
+                    <h2>Rs: 130.00</h2>
+                    <button onclick='addtocart(3)'>Add to cart</button>
+                </div>
+            </div>
+
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/kuruvi.jpg' alt='2 ¾” Kuruvi'>
+                </div>
+                <div class='bottom'>
+                    <p>2 ¾” Kuruvi</p>
+                    <h2>Rs: 40.00</h2>
+                    <button onclick='addtocart(0)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Lakshmi.jpg' alt='3 ½” Lakshmi'>
+                </div>
+                <div class='bottom'>
+                    <p>3 ½” Lakshmi</p>
+                    <h2>Rs: 60.00</h2>
+                    <button onclick='addtocart(1)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmi.jpg' alt='4” Laxmi'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi</p>
+                    <h2>Rs: 98.00</h2>
+                    <button onclick='addtocart(2)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmigold.jpg' alt='4” Laxmi (Gold)'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi (Gold)</p>
+                    <h2>Rs: 130.00</h2>
+                    <button onclick='addtocart(3)'>Add to cart</button>
+                </div>
+            </div>
+
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/kuruvi.jpg' alt='2 ¾” Kuruvi'>
+                </div>
+                <div class='bottom'>
+                    <p>2 ¾” Kuruvi</p>
+                    <h2>Rs: 40.00</h2>
+                    <button onclick='addtocart(0)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Lakshmi.jpg' alt='3 ½” Lakshmi'>
+                </div>
+                <div class='bottom'>
+                    <p>3 ½” Lakshmi</p>
+                    <h2>Rs: 60.00</h2>
+                    <button onclick='addtocart(1)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmi.jpg' alt='4” Laxmi'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi</p>
+                    <h2>Rs: 98.00</h2>
+                    <button onclick='addtocart(2)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmigold.jpg' alt='4” Laxmi (Gold)'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi (Gold)</p>
+                    <h2>Rs: 130.00</h2>
+                    <button onclick='addtocart(3)'>Add to cart</button>
+                </div>
+            </div>
+
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/kuruvi.jpg' alt='2 ¾” Kuruvi'>
+                </div>
+                <div class='bottom'>
+                    <p>2 ¾” Kuruvi</p>
+                    <h2>Rs: 40.00</h2>
+                    <button onclick='addtocart(0)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Lakshmi.jpg' alt='3 ½” Lakshmi'>
+                </div>
+                <div class='bottom'>
+                    <p>3 ½” Lakshmi</p>
+                    <h2>Rs: 60.00</h2>
+                    <button onclick='addtocart(1)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmi.jpg' alt='4” Laxmi'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi</p>
+                    <h2>Rs: 98.00</h2>
+                    <button onclick='addtocart(2)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmigold.jpg' alt='4” Laxmi (Gold)'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi (Gold)</p>
+                    <h2>Rs: 130.00</h2>
+                    <button onclick='addtocart(3)'>Add to cart</button>
+                </div>
+            </div>
+
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/kuruvi.jpg' alt='2 ¾” Kuruvi'>
+                </div>
+                <div class='bottom'>
+                    <p>2 ¾” Kuruvi</p>
+                    <h2>Rs: 40.00</h2>
+                    <button onclick='addtocart(0)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Lakshmi.jpg' alt='3 ½” Lakshmi'>
+                </div>
+                <div class='bottom'>
+                    <p>3 ½” Lakshmi</p>
+                    <h2>Rs: 60.00</h2>
+                    <button onclick='addtocart(1)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmi.jpg' alt='4” Laxmi'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi</p>
+                    <h2>Rs: 98.00</h2>
+                    <button onclick='addtocart(2)'>Add to cart</button>
+                </div>
+            </div>
+            <div class='box'>
+                <div class='img-box'>
+                    <img class='images' src='image/Laxmigold.jpg' alt='4” Laxmi (Gold)'>
+                </div>
+                <div class='bottom'>
+                    <p>4” Laxmi (Gold)</p>
+                    <h2>Rs: 130.00</h2>
+                    <button onclick='addtocart(3)'>Add to cart</button>
+                </div>
+            </div>
+
+
+        <div class="sidebar" id="sidebar">
+            <div class="head">
+                <p>My Cart</p>
+                <button class="close-btn" onclick="toggleCart()">X</button>
+            </div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+            </div>
+            <button id="orderButton" onclick="orderItems()">Order</button>
+        </div>
+    </div>
+    <footer>
+        <h3>CONTACT</h3><br>
+        <P>Address: 13/141, 4/723-H,Sundarrajapuram,<br>Anuppankulam,Sivakasi,Virudhunagar,<br>Tamil Nadu-626 123.</P><br>
+        <h3>CALL US</h3>
+        <P>+91 9626364512<br>+91 8508291769 </P><br>
+        <h3>OUR EMAIL</h3>
+        <P>sales@carnivalcrackerssivakasi.in</P><br>
+        <p style="text-align: center;">&copy; 2024 Carnival Crackers. All rights reserved.</p>
+    <div id="social-media">
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i><h3 >Instagram</h3></a>
+        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i><h3>Facebook</h3></a>
+        <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i><h3>Whatsapp</h3></a>
+    </div>
+    </footer>
+    <script src="addtocart.js"></script>
+</body>
+</html>
